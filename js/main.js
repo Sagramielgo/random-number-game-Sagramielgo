@@ -1,5 +1,5 @@
 'use strict';
-colo;
+
 /* 1 Generar número aleatorio entre 0 y 100 
 
 
@@ -32,9 +32,10 @@ const randomNumber = getRandomNumber(max);
 
 console.log(`El número aleatorio es: ${randomNumber}`);
 
-//contador
+//contador suma 1
 let acc = 0;
 const timesTry = () => {
   acc += 1;
   counterTimesElement.innerHTML = `${acc}`;
 };
+timesTry();
