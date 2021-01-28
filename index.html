@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MÓDULO 2 Evaluación final Sagra Mielgo</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -14,13 +14,26 @@
         <h1>Adivina el número</h1>
     </header>
 
+    <main class="main">
 
-    <form>Prueba
-        Pista: Escribe el número y dale a Prueba</form>
-    Número de intentos: 0
+        <form class="mainForm" action="">
+
+            <label for="number" class="main__form--text"> Pista</label>
+
+            <input type="number" id="number" class="main__form--number" placeholder="Escribe aquí">
+
+            <input class="main__form--tryBtn tryButton-js" id="number" type="submit" value="Prueba">
+
+        </form>
 
 
-    <script type="text/javascript" href="../js/main.js"></script>
+        <section class="pista"></section>
+        <p> Escribe el número y dale a prueba</p>
+        <span class>Número de intentos:</span>
+        <span>0</span>
+        </section>
+    </main>
+    <script type="text/javascript" href="./js/main.js"></script>
 </body>
 
 </html>
