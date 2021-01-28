@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MÓDULO 2 Evaluación final Sagra Mielgo</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>MÓDULO 2 Evalución Intermedia Sagra Mielgo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+
 </head>
 
 <body>
-
-    <header>
-        <h1>Adivina el número</h1>
+    <header class="header">
+        <h1 class="header__title">Adivina el número</h1>
     </header>
 
     <main class="main">
 
-        <form class="mainForm" action="">
+        <form class="main__form" action="">
+            <label for="number" class="main__form--text">Introduce un número entre el 1 y el 100</label>
 
-            <label for="number" class="main__form--text"> Pista</label>
+            <input class="main__form--number numberInput-js" id="number" type="number"
+                placeholder="Escribe aquí tu número favorito">
 
-            <input type="number" id="number" class="main__form--number numberInput-js" placeholder="Escribe aquí">
-
-            <input class="main__form--tryBtn tryButton-js" id="number" type="submit" value="¡Suerte!">
-
-        </form>
+            <input class="main__form--tryBtn tryButton-js" id="number" type="submit" value="Suerte">
 
 
-        <section class="instructions"></section>
-        <h4> Escribe el número y pulsa a ¡Suerte!</h4>
-        <span class="instructions__times">Número de intentos:</span>
-        <span class="instructions__times numberTimes-js">0</span>
-        </section>
+            <section class="instructions">
+                <h4 Sclass="instructions__tryNumber tryNumber-js">Introduce tu número y pulsa suerte.</h4>
+
+                <span class="instructions__times">Intentos</span>
+                <span class="instructions__times numberTimes-js">0</span>
+            </section>
     </main>
-    <script src="./js/main.js"></script>
+
+    <script type="text/javascript" src="./js/main.js">
+    </script>
 </body>
 
 </html>
