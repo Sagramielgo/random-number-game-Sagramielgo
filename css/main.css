@@ -9,3 +9,64 @@
   margin-top: 70px;
   margin-bottom: 20px;
 }
+.header__title {
+  font-size: 60px;
+  padding: 10px 0;
+  color: rebeccapurple;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+}
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  color: rebeccapurple;
+}
+.main__form--text {
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.main__form--number {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid pink;
+  border-radius: 5px;
+}
+.main__form--tryBtn,
+.main__form--resetBtn {
+  width: 150px;
+  font-size: 16px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 15px;
+  border: 1px solid rebeccapurple;
+  background-color: pink;
+  border-radius: 5px;
+}
+.main__form--tryBtn,
+.main__form--resetBtn :hover {
+  background-color: violet;
+}
+
+.instructions {
+  text-align: center;
+}
+.instructions__tryNumber {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.instructions__times {
+  font-size: 22px;
+  color: rebeccapurple;
+  font-weight: 800;
+}

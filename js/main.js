@@ -38,25 +38,25 @@ const timesTry = () => {
 //EVENT Times FUNCTION
 function priceAnswer() {
   const numberIntroduced = inputNumberElement.value;
-  /*  const userIntroduceValue = numberIntroduced; */
+  const userIntroduceValue = userIntroduceValue;
 
   console.log(`La usuaria ha introducido el número ${numberIntroduced}`);
 
-  if (randomNumber === numberIntroduced) {
+  if (randomNumber === userIntroduceValue) {
     tryNumberElement.innerHTML = '¡¡Enhorabuena, has acertado!!';
     console.log('La usuaria ha ganado el juego');
-  } else if (numberIntroduced < 1 || numberIntroduced > 100) {
+  } else if (userIntroduceValue < 1 || userIntroduceValue > 100) {
     tryNumberElement.innerHTML = 'Por favor, introduce un número entre 1 y 100';
-  } else if (randomNumber < numberIntroduced) {
+  } else if (randomNumber < userIntroduceValue) {
     tryNumberElement.innerHTML = 'El número es demasiado alto';
   } else {
     tryNumberElement.innerHTML = 'El número es demasiado bajo';
   }
 }
-
+priceAnswer();
 function start(event) {
   event.preventDefault();
-  priceAnswer();
+
   timesTry();
 }
 
