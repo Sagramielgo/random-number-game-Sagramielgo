@@ -1,10 +1,10 @@
 'use strict';
-
-/* 1 Generar número aleatorio entre 0 y 1001 
+colo;
+/* 1 Generar número aleatorio entre 0 y 100 
 
 
 2 Escuchar botón de prueba
-      2.1 cada click suma 1 = bucle 
+      2.1 cada click suma 1 
       2.2 Añade 1 al número de intentos
 
 
@@ -16,6 +16,11 @@
     3.4  menor o mayor que 100 no válido
 
 */
+const tryButtonElement = document.querySelector('.tryButton-js');
+const resetButtonElement = document.querySelector('.resetButon-js');
+const inputNumberElement = document.querySelector('.numberInput-js');
+const tryNumberElement = document.querySelector('.tryNumber-js');
+const counterTimesElement = document.querySelector('.numberTimes-js');
 
 //sacar número aleatorio
 const max = 100;
@@ -26,3 +31,10 @@ function getRandomNumber(max) {
 const randomNumber = getRandomNumber(max);
 
 console.log(`El número aleatorio es: ${randomNumber}`);
+
+//contador
+let acc = 0;
+const timesTry = () => {
+  acc += 1;
+  counterTimesElement.innerHTML = `${acc}`;
+};
