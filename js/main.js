@@ -21,7 +21,7 @@ const timesTry = () => {
 
 function priceAnswer() {
   const numberIntroduced = inputNumberElement.value;
-  const userIntroduceValue = userIntroduceValue;
+  const userIntroduceValue = numberIntroduced;
 
   console.log(`La usuaria ha introducido el número ${numberIntroduced}`);
 
