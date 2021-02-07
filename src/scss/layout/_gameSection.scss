@@ -1,0 +1,66 @@
+.header {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  &__title {
+    font-size: 60px;
+    padding: 10px 0;
+    color: $mainColor;
+  }
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    color: $mainColor;
+
+    &--text {
+      padding-bottom: 20px;
+      font-size: 22px;
+      font-weight: $boldFont;
+    }
+
+    &--number {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      width: 300px;
+      padding: 10px;
+      border: 2px solid $softColor;
+      border-radius: 5px;
+    }
+    &--tryBtn,
+    &--resetBtn {
+      width: 150px;
+      font-size: 16px;
+      padding: 5px 0 5px 0;
+      margin-bottom: 15px;
+      border: 1px solid $mainColor;
+      background-color: $softColor;
+      border-radius: 5px;
+      &:hover {
+        background-color: $mediumColor;
+      }
+    }
+  }
+}
+.instructions {
+  text-align: center;
+
+  &__tryNumber {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &__times {
+    font-size: 22px;
+    color: $mainColor;
+    font-weight: 800;
+  }
+}
