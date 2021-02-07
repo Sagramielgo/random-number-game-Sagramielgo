@@ -1,7 +1,6 @@
 'use strict';
 
 const tryButtonElement = document.querySelector('.tryButton-js');
-const resetButtonElement = document.querySelector('.resetButon-js');
 const inputNumberElement = document.querySelector('.numberInput-js');
 const tryNumberElement = document.querySelector('.tryNumber-js');
 const counterTimesElement = document.querySelector('.numberTimes-js');
