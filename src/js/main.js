@@ -7,13 +7,11 @@ const counterTimesElement = document.querySelector('.numberTimes-js');
 const resetButtonElement = document.querySelector('.resetButton-js');
 const max = 100;
 
+//GET RANDOM NUMBER
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
-
 const randomNumber = getRandomNumber(max);
-
-console.log(`El número aleatorio es: ${randomNumber}`);
 
 //COUNTER
 let acc = 0;
@@ -38,12 +36,14 @@ function paintAnswerNumber() {
   tryNumberElement.innerHTML = htmlCode;
 }
 
+//PAINT AND TIMES
 function handlestart(event) {
   event.preventDefault();
   paintAnswerNumber();
   timesTry();
 }
 
+//RESET
 function handleReset() {
   location.reload();
 }
