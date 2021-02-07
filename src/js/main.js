@@ -4,6 +4,7 @@ const tryButtonElement = document.querySelector('.tryButton-js');
 const inputNumberElement = document.querySelector('.numberInput-js');
 const tryNumberElement = document.querySelector('.tryNumber-js');
 const counterTimesElement = document.querySelector('.numberTimes-js');
+const resetButtonElement = document.querySelector('.resetButton-js');
 const max = 100;
 
 function getRandomNumber(max) {
@@ -43,5 +44,9 @@ function start(event) {
   timesTry();
 }
 
+function resetTimes() {
+  location.reload();
+}
 //LISTENER
 tryButtonElement.addEventListener('click', start);
+resetButtonElement.addEventListener('click', resetTimes);
