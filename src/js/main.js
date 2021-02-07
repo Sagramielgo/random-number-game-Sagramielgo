@@ -38,15 +38,15 @@ function paintAnswerNumber() {
   tryNumberElement.innerHTML = htmlCode;
 }
 
-function start(event) {
+function handlestart(event) {
   event.preventDefault();
   paintAnswerNumber();
   timesTry();
 }
 
-function resetTimes() {
+function handleReset() {
   location.reload();
 }
 //LISTENER
-tryButtonElement.addEventListener('click', start);
-resetButtonElement.addEventListener('click', resetTimes);
+tryButtonElement.addEventListener('click', handlestart);
+resetButtonElement.addEventListener('click', handleReset);
