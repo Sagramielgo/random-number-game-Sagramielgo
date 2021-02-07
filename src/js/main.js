@@ -1,20 +1,5 @@
 'use strict';
 
-/* 1 Escuchar botón de prueba
-      1.1 cada click suma 1 = bucle
-
-2 Generar número aleatorio entre 0 y 100
-
-3 Leer número en input
-    3.1 es mayor que el aleatorio = responder el núm es demasiado alto
-    3.2 es menor que el aleatorio = responder es demasiado bajo
-    3.3 es igual que el aleatorio = enhorabuena
-    3.4  menor o mayor que 100 no válido
-
-4 escuchar botón reset= volver a 0
-*/
-
-//VARIABLES
 const tryButtonElement = document.querySelector('.tryButton-js');
 const resetButtonElement = document.querySelector('.resetButon-js');
 const inputNumberElement = document.querySelector('.numberInput-js');
@@ -38,34 +23,26 @@ const timesTry = () => {
 };
 
 //EVENT Times FUNCTION
-function priceAnswer() {
+function paintAnswerNumber() {
   const numberIntroduced = parseInt(inputNumberElement.value);
-
-  console.log(`La usuaria ha introducido el número ${numberIntroduced}`);
-
+  let htmlCode = '';
   if (randomNumber === numberIntroduced) {
-    tryNumberElement.innerHTML = '¡¡Enhorabuena, has acertado!!';
-    console.log('La usuaria ha ganado el juego');
+    htmlCode += '¡¡Enhorabuena, has acertado!!';
   } else if (numberIntroduced < 1 || numberIntroduced > 100) {
-    tryNumberElement.innerHTML = 'Por favor, introduce un número entre 1 y 100';
+    htmlCode += 'Por favor, introduce un número entre 1 y 100';
   } else if (randomNumber < numberIntroduced) {
-    tryNumberElement.innerHTML = 'El número es demasiado alto';
+    htmlCode += 'El número es demasiado alto';
   } else {
-    tryNumberElement.innerHTML = 'El número es demasiado bajo';
+    htmlCode += 'El número es demasiado bajo';
   }
-}
-
-//EVENT RESET FUNCTION
-function resetTimes() {
-  location.reload();
+  tryNumberElement.innerHTML = htmlCode;
 }
 
 function start(event) {
   event.preventDefault();
-  priceAnswer();
+  paintAnswerNumber();
   timesTry();
 }
 
-//LISTENERS
+//LISTENER
 tryButtonElement.addEventListener('click', start);
-resetButtonElement.addEventListener('click', resetTimes);
